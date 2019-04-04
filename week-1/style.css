@@ -17,8 +17,4 @@ html, body {
   position: absolute;
   top: 8px;
   right: 16px;
-  width: 800px;
-  min-height: 400px;
-  margin: 100px auto;
-  color: #333;
 }
