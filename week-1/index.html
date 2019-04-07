@@ -15,8 +15,12 @@
     function funk(){
       if(blackness){
       document.getElementById("wrapper").style="color:white;"
+      document.getElementById("button").innerHTML="make it black;"
+
     } else {
       document.getElementById("wrapper").style="color:black;"
+      document.getElementById("button").innerHTML="make it white;"
+
     }
     blackness = !blackness;
     }
@@ -36,7 +40,7 @@
           <li> javascript
           <li> node.js
         </ul>
-        <button type="button" onclick="funk()">Change color!</button>
+        <button id="button" type="button" onclick="funk()">Change color!</button>
 
   </div>
 </body>
