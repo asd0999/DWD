@@ -12,7 +12,13 @@
   </style>
   <script>
     function funk(){
-      document.getElementById("wrapper").style="color:blue;"
+      let blackness = true;
+      if(blackness){
+      document.getElementById("wrapper").style="color:white;"
+    } else {
+      document.getElementById("wrapper").style="color:black;"
+    }
+    blackness = !blackness;
     }
 </script>
 
@@ -30,7 +36,7 @@
           <li> javascript
           <li> node.js
         </ul>
-        <button type="button" onclick="funk()">Blue!</button>
+        <button type="button" onclick="funk()">Change color!</button>
 
   </div>
 </body>
