@@ -20,9 +20,12 @@
     } else {
       document.getElementById("wrapper").style="color:black;"
       document.getElementById("button").innerHTML="Make it white again!"
-
     }
     blackness = !blackness;
+    }
+
+    party(){
+      document.getElementById("party").src="hat.png"
     }
 </script>
 
@@ -44,9 +47,11 @@
         <b>And a button that does something!</b>
         <br>
         <button id="button" type="button" onclick="funk()">Change color!</button>
+        <button id="button2" type="button" onclick="party()">Whats this!?</button>
         <p>
-          <img src="hat.png" height="42" width="42" />
-
+          <span>
+            <img src="" height="250" id="party" />
+          </span>
   </div>
 </body>
 
