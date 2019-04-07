@@ -13,26 +13,55 @@
       position: absolute;
       top: 123px;
       right: 200px;
+    }
+    #button2 {
+      position: absolute;
+      top: 250px;
+      right: 240px;
+      display: none;
+    }
+
+    #partyHat {
+      display: none;
+    }
+
+    #link {
+      position: absolute;
+      margin: auto;
+      left: 540px;
+      border: 3px solid green;
+      padding: 10px;
       display: none;
     }
   </style>
   <script>
     let blackness = true;
+    let firstTime = true;
     function funk(){
       if(blackness){
-      document.getElementById("wrapper").style="color:white;"
+      document.getElementById("wrapper").style="color:purple;"
       document.getElementById("button").innerHTML="Make it black again!"
 
     } else {
       document.getElementById("wrapper").style="color:black;"
-      document.getElementById("button").innerHTML="Make it white again!"
+      document.getElementById("button").innerHTML="Make it purple again!"
     }
     blackness = !blackness;
+    if(firstTime){
+      showButton2();
+    }
+    firstTime = false;
     }
 
-    function party(){
-      document.getElementById("party").src="hat.png"
-      document.getElementsByTagName("span").style.display="block";
+    function showButton2(){
+      document.getElementById("button2").style.display="inline";
+    }
+
+    function newImage(){
+      document.getElementById("partyHat").src="hat.png"
+      document.getElementById("partyHat").style.display="inline";
+      document.getElementById("button2").style.display="none";
+      document.getElementById("link").style.display="inline";
     }
 </script>
 
@@ -52,14 +81,18 @@
         </ul>
         <br>
         <b>And a button that does something!</b>
-        <br>
-        <button id="button" type="button" onclick="funk()">Change color!</button>
         <p>
-          <button id="button2" type="button" onclick="party()">Whats this!?</button>
+          <button id="button" type="button" onclick="funk()">Change color!</button>
           <p>
-            <span>
-              <img src="" height="250" id="party" />
-            </span>
+            <button id="button2" type="button" onclick="newImage()">But where is my hat!?</button>
+            <p>
+              <span>
+                <img src="" height="250" id="partyHat" />
+              </span>
+              <h1>
+                <a href="https://media.giphy.com/media/SRO0ZwmImic0/giphy.gif" id="link">LETS PARTY!!!</a>
+              </h1>
+
   </div>
 </body>
 
