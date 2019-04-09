@@ -1,4 +1,6 @@
+//part 2c
 //creating html doc from plain text
+
 var readline = require('readline');
 var fs = require('fs');
 
