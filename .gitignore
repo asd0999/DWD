@@ -1,1 +1,7 @@
-*try
+.gitignore
+part-2b.html
+html-generator-class.js
+fsdoc.html
+new.html
+demofile1.txt
+
