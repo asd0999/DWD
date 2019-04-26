@@ -1,5 +1,6 @@
 //writing text result of nodecurl to file
 
+
 let url = process.argv[2];
 let docdoc = '';
 
